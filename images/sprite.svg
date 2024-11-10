@@ -1,0 +1,8 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+  <defs>      
+    <symbol id="mobile-close" viewBox="0 0 32 32">
+      <path fill="var(--color1, #fff)" d="M8.74 8.74a.93.93 0 0 1 1.32 0l13.2 13.2a.933.933 0 0 1-1.32 1.32l-13.2-13.2a.93.93 0 0 1 0-1.32z"/>
+      <path fill="var(--color1, #fff)" d="M8.74 23.26a.93.93 0 0 1 0-1.32l13.2-13.2a.933.933 0 0 1 1.32 1.32l-13.2 13.2a.93.93 0 0 1-1.32 0z"/>
+    </symbol>
+             </defs>
+</svg>
