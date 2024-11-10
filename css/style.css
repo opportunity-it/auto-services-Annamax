@@ -257,7 +257,7 @@ header {
 .personal-data {
   padding: 20px;
 
-  width: 100%;
+  max-width: 350px;
 
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -274,10 +274,6 @@ header {
 
 .form-field {
   margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
-
-  width: 260px;
 
   display: flex;
   align-items: center;
@@ -295,6 +291,7 @@ color: rgb(82, 77, 77);;
   padding-left: 10px;
 
   height: 30px;
+width: 100%;
 
   font-size: 17px;
 
