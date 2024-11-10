@@ -1,8 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
 
-      background-color: #ccc;
-   }
+  background-color: #ccc;
+}
 
 .visually-hidden {
   position: absolute;
@@ -35,16 +35,31 @@ p {
   text-decoration: none;
 }
 
-img{
+img {
   display: block;
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-  
+
 .button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  padding: 5px 10px;
+
+  min-width: 100px;
+
+  background-color: #d4d4ab;
+  border-radius: 10px;
+  border: 2px solid #2e2eaa;
+
+  color: #600f0f;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-size: 27px;
+  letter-spacing: 0.9px;
+
+  color: #ffffff;
 }
 
 .container {
@@ -107,6 +122,9 @@ header {
   height: 20px;
 
   display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 
   cursor: pointer;
 }
@@ -147,57 +165,67 @@ header {
 
 .hero {
   padding-top: 90px;
-padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
-.hero-title{
+.hero-title {
   margin-bottom: 40px;
 
+  font-size: 34px;
   text-align: center;
   color: #708383;
 }
 
-.hero-title>.after-title{
-margin-top: 10px;
+.hero-title > .after-title {
+  margin-top: 10px;
 
   font-size: 14px;
 
   display: block;
 
-     color: #7c6c6c;
+  color: #7c6c6c;
 }
 
-.hero-button{
-  padding: 10px 5px;
+.link-hero {
+  padding: 10px 40px;
+
+  display: block;
+
   width: 200px;
 
-    background-color: #7f6b6b;
-    border: 1px solid #8383cc;
+  background-color: #7f6b6b;
+  border: 2px solid #8383cc;
   border-radius: 10px;
+
   color: #ffffff;
 }
 
-
 /* СТИЛІЗАЦІЯ BENEFITS  */
-.list-benefits{
+.benefits {
+  padding-bottom: 40px;
+}
+
+.list-benefits {
+  margin-bottom: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.img-text{
+.img-text {
   position: relative;
   overflow: hidden;
 }
 
-.benefits-img{
+.benefits-img {
   transform: scale(1);
   transition: transform 250ms linear;
 }
 
 .img-text:hover .benefits-img,
-.img-text:focus .benefits-img{
- transform: scale(1.5);
+.img-text:focus .benefits-img {
+  transform: scale(1.5);
 }
 
 .benefits-text {
@@ -205,28 +233,138 @@ margin-top: 10px;
   bottom: 0;
   left: 0;
 
-padding: 15px;
+  padding: 15px;
 
-display: flex;
-align-items: center;justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 
-font-weight: 600;
-font-size: 18px;
-text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
 
- color: #ffffff;
- background-color: rgba(49, 46, 46, 0.9);
+  color: #ffffff;
+  background-color: rgba(49, 46, 46, 0.9);
 
- opacity: 0;
+  opacity: 0;
 
- transition: opacity 250ms linear 250ms;
+  transition: opacity 250ms linear 250ms;
 }
 
 .img-text:hover .benefits-text,
-.img-text:focus .benefits-text{
+.img-text:focus .benefits-text {
   opacity: 1;
 }
 
+/* СТИЛІЗАЦІЯ OUR-EMPLOYEES */
+.our-employees {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  background-color: #888872;
+}
+
+.images-slider {
+  margin-bottom: 25px;
+}
+
+.item-employees {
+  position: relative;
+}
+
+.text-employees {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  padding: 5px 10px;
+
+  width: 100%;
+
+  font-size: 17px;
+
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #0e4f63;
+}
+
+/* СТИЛІЗАЦІЯ CONNECTION-FORM  */
+.connection-form {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.personal-data {
+  padding: 20px;
+
+  width: 100%;
+
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.title-form {
+  margin-bottom: 20px;
+
+  display: block;
+
+  font-size: 19px;
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 260px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.label-form{
+  font-size: 17px;
+  font-weight: 600;
+
+color: rgb(82, 77, 77);;
+}
+
+.form-input {
+  padding-left: 10px;
+
+  height: 30px;
+
+  font-size: 17px;
+
+  color: #423474;
+  background-color: #f8eded;
+  border-radius: 10px;
+  border: 1px solid rgb(82, 77, 77);
+  outline: transparent;
+}
+
+.form-input:not(:placeholder-shown):required:valid {
+  border-color: rgb(18, 218, 18);
+}
+
+.form-input.form-input:not(:placeholder-shown):required:invalid {
+  border-color: rgb(143, 4, 4);
+}
+
+.form-input::placeholder{
+  color: rgb(82, 77, 77, 0.5);
+  font-weight: 500;
+}
+
+.button-form {
+  margin-right: auto;
+  margin-left: auto;
+
+  display: block;
+  }

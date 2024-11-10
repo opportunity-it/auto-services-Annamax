@@ -31,6 +31,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -47,9 +51,13 @@
         <a href="" class="link">Logo</a>
         <ul class="list list-communication">
           <li><a href="" class="link">+1(111)-111-11-11</a></li>
-          <li><a href="" class="link">gmail@annamax.com.ua</a></li>
+          <li>
+            <a href="mailto:info.autodienst.at@gmail.com" class="link">
+              info.autodienst.at@gmail.com
+            </a>
+          </li>
         </ul>
-        <button type="button" class="button mobile-button">
+        <button type="button" class="mobile-button">
           <span></span>
         </button>
       </div>
@@ -70,12 +78,12 @@
             width="100"
             height="100"
           /> -->
-          <button type="button" class="button hero-button">Кнопка герой</button>
+          <a href="" class="link link-hero">Форма захвату</a>
         </div>
       </section>
       <section class="benefits">
         <div class="container">
-          <h2 class="visually-hidden">Наші переваги</h2>
+          <h2 class="title">Наші переваги</h2>
           <ul class="list list-benefits">
             <li>
               <div class="img-text">
@@ -124,9 +132,152 @@
               </div>
             </li>
           </ul>
+          <button type="button" class="button">Кнопка наші переваги</button>
+        </div>
+      </section>
+      <section class="our-employees">
+        <div class="container">
+          <h2 class="title">Наші кращі працівники</h2>
+          <div class="images-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/2048x2048.jpg"
+                    alt="Андрій Слісаренко"
+                    class="img-employees"
+                  />
+                  <p class="text-employees">
+                    Працівник з 10-річним досвідом у ремонті ходової частини
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/2048x2048.jpg"
+                    alt="Богдан Степаненко"
+                    class="img-employees"
+                  />
+                  <p class="text-employees">
+                    Працівник на посаді механік з 7-річним досвідом у даній
+                    сфері
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/2048x2048.jpg"
+                    alt="Василь Петренко"
+                    class="img-employees"
+                  />
+                  <p class="text-employees">
+                    Займається форбуванням корпусу авто понад 6 років
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/2048x2048.jpg"
+                    alt="Олег Василенко"
+                    class="img-employees"
+                  />
+                  <p class="text-employees">
+                    Прцівник, який займається ремонтом двигуна з 12 досвідом
+                    роботи
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/2048x2048.jpg"
+                    alt="Олег Василенко"
+                    class="img-employees"
+                  />
+                  <p class="text-employees">
+                    Прцівник, який займається ремонтом двигуна з 12 досвідом
+                    роботи
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/2048x2048.jpg"
+                    alt="Олег Василенко"
+                    class="img-employees"
+                  />
+                  <p class="text-employees">
+                    Прцівник, який займається ремонтом двигуна з 12 досвідом
+                    роботи
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/2048x2048.jpg"
+                    alt="Олег Василенко"
+                    class="img-employees"
+                  />
+                  <p class="text-employees">
+                    Прцівник, який займається ремонтом двигуна з 12 досвідом
+                    роботи
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="button">Кнопка наші працівники</button>
+        </div>
+      </section>
+      <section class="connection-form">
+        <div class="container">
+          <form class="personal-data" autocomplete="on" name="connection_form">
+            <strong class="title title-form">Виникли питання? Залиште свої дані</strong>
+            <label class="form-field">
+              <span class="label-form">Ім'я</span>
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Андрій"
+                minlength="2"
+                required
+                title="Введіть не менше 2-х символів"
+                class="form-input"
+              />
+              </label>
+            <label class="form-field">
+              <span class="label-form">Телефон</span>
+              <input type="tel" name="tel" required  placeholder="+38(___)___-__-__" pattern="^(\+38\(0\d{2}\)\d{3}-\d{2}-\d{2})$" class="form-input"/></label>
+            <button type="submit" class="button button-form">Відправити</button>
+          </form>
+        </div>
+      </section>
+      <section class="our-customers">
+        <div class="container">
+          <h2 class="title">Наші клієнти</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
       </section>
     </main>
     <footer></footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/jquery.inputmask.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('input[name="tel"]').inputmask("+38(999)999-99-99");
+    });
+  </script> <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
