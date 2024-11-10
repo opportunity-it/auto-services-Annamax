@@ -322,6 +322,42 @@ width: 100%;
   display: block;
   }
 
+
+/* СТИЛІЗАЦІЯ OUR CUSTOMERS  */
+.customers-item{
+  padding: 5px;
+
+      border: 1px solid white;
+    border-radius: 30px;
+}
+
+.customers-item:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.our.customers{
+ padding-top: 10px;
+ padding-bottom: 20px;
+}
+
+.customers-quantity{
+margin-bottom: 10px;
+
+  font-size: 40px;
+  font-weight: 600;
+  
+  text-align: center;
+  color: #ffffff;
+}
+
+.customers-subtitle{
+  font-size: 18px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
   /* МОБІЛЬНЕ МЕНЮ  */
 .menu-container {
   position: fixed;
