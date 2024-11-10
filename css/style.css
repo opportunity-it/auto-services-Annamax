@@ -115,51 +115,7 @@ header {
   }
 }
 
-.mobile-button {
-  position: relative;
 
-  width: 30px;
-  height: 20px;
-
-  display: block;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  cursor: pointer;
-}
-
-.mobile-button::before,
-.mobile-button::after {
-  content: " ";
-  position: absolute;
-  left: 0;
-
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-
-.mobile-button::before {
-  top: 0;
-}
-
-.mobile-button::after {
-  bottom: 0;
-}
-
-.mobile-button > span {
-  position: absolute;
-  top: 9px;
-  left: 0;
-
-  height: 2px;
-  width: 100%;
-
-  background-color: #ffffff;
-  border-radius: 10px;
-}
 
 /* СТИЛІЗАЦІЯ HERO  */
 
@@ -368,3 +324,94 @@ color: rgb(82, 77, 77);;
 
   display: block;
   }
+
+  /* МОБІЛЬНЕ МЕНЮ  */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 30px 30px 30px ;
+      background-color: #473d3d;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-toggle {
+   position: relative;
+
+  width: 30px;
+  height: 20px;
+
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+   border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.mobile-button::before,
+.mobile-button::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.mobile-button::before {
+  top: 0;
+}
+
+.mobile-button::after {
+  bottom: 0;
+}
+
+.mobile-button > span {
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  height: 2px;
+  width: 100%;
+
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu-item{
+  margin-bottom: 20px;
+}
+
+.mobile-menu-link {
+  color: #fff;
+}

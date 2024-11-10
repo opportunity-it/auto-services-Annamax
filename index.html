@@ -43,7 +43,7 @@
         <nav class="nav">
           <ul class="list nav-list">
             <li><a href="" class="link">Переваги</a></li>
-            <li><a href="" class="link">Наші клієнти (партнери)</a></li>
+            <li><a href="" class="link">Наші клієнти</a></li>
             <li><a href="" class="link">Про нас</a></li>
             <li><a href="" class="link">Контакти</a></li>
           </ul>
@@ -57,7 +57,8 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="mobile-button">
+       
+        <button type="button" class="mobile-button menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span>
         </button>
       </div>
@@ -271,6 +272,30 @@
       </section>
     </main>
     <footer></footer>
+ <!-- МОБІЛЬНЕ МЕНЮ  -->
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+       <svg width="20" height="20">
+        <use href="./images/sprite.svg#mobile-close"></use>
+       </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item"><a href="" class="link mobile-menu-link">Переваги</a></li>
+        <li class="mobile-menu-item"><a href="" class="link mobile-menu-link">Наші клієнти</a></li>
+        <li class="mobile-menu-item"><a href="" class="link mobile-menu-link">Наші працівники</a></li>
+        <li class="mobile-menu-item"><a href="" class="link mobile-menu-link">Про нас</a></li>
+        <li class="mobile-menu-item"><a href="" class="link mobile-menu-link">Контакти</a></li>
+        
+      </ul>
+    </div>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+<script src="./js/mobile-menu.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./js/jquery.inputmask.min.js"></script>
   <script>
