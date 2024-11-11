@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,18 +43,19 @@
         <nav class="nav">
           <ul class="list nav-list">
             <li><a href="#benefits" class="link link-header">Vorteile</a></li>
-            <li><a href="" class="link link-header">Kunden</a></li>
-            <li><a href="" class="link link-header">Mitarbeiter</a></li>
-            <li><a href="" class="link link-header">Über uns</a></li>
+            <li><a href="#our-customers" class="link link-header">Kunden</a></li>
+            <li><a href="#our-employees" class="link link-header">Mitarbeiter</a></li>
+            <li><a href="#about-us" class="link link-header">Über uns</a></li>
           </ul>
         </nav>
-         <ul class="list list-lang">
+
+        <ul class="list list-lang">
           <li><a href="./index.html" class="link link-lang enabled">uk</a></li>
           <li><a href="./index-german.html" class="link link-lang disabled">de</a></li>
         </ul>
         <a href="" class="link link-logo">Logo</a>
         <ul class="list list-communication">
-          <li><a href="tel:+1(111)-111-11-11" class="link link-communication">+1(111)-111-11-11</a></li>
+          <li><a href="tel:+1(111)-111-11-11" class="link link-communication">+43 660 2430111</a></li>
           <li>
             <a href="mailto:info.autodienst.at@gmail.com" class="link link-communication">
               info.autodienst.at@gmail.com
@@ -75,21 +76,21 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">
-            Mehr als ein Autoservice!
+           Mehr als ein Autoservice!
             <span class="after-title"
               >Qualitätsausrüstung, Autoreparaturfachleute, individuelle Annäherung zu jedem Klienten.</span
             >
           </h1>
           <!-- <img
             src="./images/2048x2048.jpg"
-          
+            alt="фонове зображення"
             width="100"
             height="100"
           /> -->
           <a href="" class="link link-hero german-hero">Form der Erfassung</a>
         </div>
       </section>
-      <!-- ПЕРЕВАГИ  -->
+      <!-- ПЕРЕВАГИ Vorteile -->
       <section class="benefits"  id="benefits">
         <div class="container">
           <h2 class="title">Unsere Vorteile</h2>
@@ -97,42 +98,55 @@
             <li class="item-benefits">
               <div class="img-text">
                 <img
-                  src="./images/2048x2048.jpg"
+                  src="./images/автомобіль.jpg"
                   alt="Qualität der Arbeitsleistung"
                   width="450"
                   height="450"
                   class="benefits-img"
                 />
                 <p class="benefits-text">
-                  Professionalität des Unternehmens: Qualifizierte Spezialisten sind immer bereit, unseren Kunden qualitativ hochwertige Dienstleistungen mit einer Garantie zu bieten.
+               Professionalität des Unternehmens: Qualifizierte Spezialisten sind immer bereit, unseren Kunden qualitativ hochwertige Dienstleistungen mit einer Garantie zu bieten.   </p>
+              </div>
+            </li>
+            <li class="item-benefits">
+              <div class="img-text">
+                <img
+                  src="./images/Schraubenschlüssel.jpg"
+                  alt="Schraubenschlüssel"
+                  width="450"
+                  height="450"
+                  class="benefits-img"
+                />
+                <p class="benefits-text">
+                                   Schnelle Unterstützung: Jeden Tag haben wir ein Kontaktcenter für die Beratung und Aufzeichnungen unserer Kunden.
                 </p>
               </div>
             </li>
             <li class="item-benefits">
               <div class="img-text">
                 <img
-                  src="./images/2048x2048.jpg"
-                  alt="Qualität der Arbeitsleistung"
+                  src="./images/motor.jpg"
+                  alt="motor"
                   width="450"
                   height="450"
                   class="benefits-img"
                 />
                 <p class="benefits-text">
-                  Schnelle Unterstützung: Jeden Tag haben wir ein Kontaktcenter für die Beratung und Aufzeichnungen unserer Kunden.
+                   Geschwindigkeit der Ausführung: Wir bemühen uns, den Prozess der Verbesserung Ihres Autos zu optimieren und bemühen sich, Dienstleistungen nicht nur qualitativ hochwertig, sondern auch schnell zu erbringen.
                 </p>
               </div>
             </li>
-            <li class="item-benefits">
+             <li class="item-benefits">
               <div class="img-text">
                 <img
-                  src="./images/2048x2048.jpg"
-                  alt="Qualität der Arbeitsleistung"
+                  src="./images/motorteil.jpg"
+                  alt="motorteil"
                   width="450"
                   height="450"
                   class="benefits-img"
                 />
                 <p class="benefits-text">
-                  Geschwindigkeit der Ausführung: Wir bemühen uns, den Prozess der Verbesserung Ihres Autos zu optimieren und bemühen sich, Dienstleistungen nicht nur qualitativ hochwertig, sondern auch schnell zu erbringen.
+                      Geschwindigkeit der Ausführung: Wir bemühen uns, den Prozess der Verbesserung Ihres Autos zu optimieren und bemühen sich, Dienstleistungen nicht nur qualitativ hochwertig, sondern auch schnell zu erbringen.            
                 </p>
               </div>
             </li>
@@ -140,8 +154,8 @@
           <button type="button" class="button">Unsere Vorteile anklicken</button>
         </div>
       </section>
-      <!-- KUNDEN  -->
-      <section class="our-customers">
+      <!-- КЛІЄНТИ  KUNDEN-->
+      <section class="our-customers" id="our-customers">
         <div class="container">
           <h2 class="title">Unsere Kunden</h2>
           <ul class="list customers-list">
@@ -152,7 +166,7 @@
             <li class="customers-item">
               <p class="customers-quantity" data-target="20967">20967+</p>
               <h3 class="customers-subtitle">
-                Anzahl der reparierten Fahrzeuge
+           Anzahl der reparierten Fahrzeuge
               </h3>
             </li>
             <li class="customers-item">
@@ -162,14 +176,14 @@
             <li class="customers-item">
               <p class="customers-quantity" data-target="118">118+</p>
               <h3 class="customers-subtitle">
-                Anzahl der Kunden, die uns empfehlen
+              Anzahl der Kunden, die uns empfehlen
               </h3>
             </li>
           </ul>
         </div>
       </section>
-      <!-- Mitarbeiter  -->
-      <section class="our-employees">
+      <!-- ПРАЦІВНИКИ Mitarbeiter -->
+      <section class="our-employees" id="our-employees">
         <div class="container">
           <h2 class="title">Unsere besten Mitarbeiter</h2>
           <div class="images-slider swiper">
@@ -177,84 +191,72 @@
               <div class="swiper-slide">
                 <div class="item-employees">
                   <img
-                    src="./images/2048x2048.jpg"
-                    alt="Andriy Slisarenko"
+                    src="./images/Андрій-Слісаренко.jpg"
+                    alt="Mitarbeiter mit 10 Jahren Erfahrung"
                     class="img-employees"
                   />
                   <p class="text-employees">
-                    Mitarbeiter mit 10-jähriger Erfahrung in der Reparatur von Fahrwerken
+                      Reparatur von Fahrgestellen mit 10-er Erfahrung
                   </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="item-employees">
                   <img
-                    src="./images/2048x2048.jpg"
-                    alt="Bogdan Stepanenko"
+                    src="./images/Богдан-Степаненко.jpg"
+                    alt="Mitarbeiter mit 7 Jahren Erfahrung"
                     class="img-employees"
+                                     />
+                  <p class="text-employees">
+                    Mechaniker mit 7 Jahren Erfahrung                </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/Антуан-Жекович.jpg"
+                    alt="Mitarbeiter mit 6 Jahren Erfahrung"
+                    class="img-employees"
+                                       />
+                  <p class="text-employees">
+                    Lackierung der Karosserie für mehr als 6 Jahre
+                  </p>
+                </div>
+              </div>
+                         <div class="swiper-slide">
+                <div class="item-employees">
+                  <img
+                    src="./images/Павло-Денисюк.jpg"
+                    alt="Mitarbeiter mit 8 Jahren Erfahrung"
+                    class="img-employees"
+                     
                   />
                   <p class="text-employees">
-                    Mitarbeiter in der Position des Mechaniker mit 7 Jahren Erfahrung auf diesem Gebiet
+                    Motorenreparatur mit 8 Jahren Erfahrung
                   </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="item-employees">
                   <img
-                    src="./images/2048x2048.jpg"
-                    alt="Vasyl Petrenko"
+                    src="./images//Назар-Коваль.jpg"
+                    alt="Mitarbeiter mit 11 Jahren Erfahrung"
                     class="img-employees"
-                  />
+                                       />
                   <p class="text-employees">
-                    Beschäftigt in der Schmiede der Karosserie des Autos für mehr als 6 Jahre
+                    Autoreparatur mit 11 Jahren Erfahrung
                   </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="item-employees">
                   <img
-                    src="./images/2048x2048.jpg"
-                    alt="Oleg Vasilenko"
+                    src="./images/Ігор-Пономар.jpg"
+                    alt="Autoreparatur mit 12 Jahren Erfahrung"
                     class="img-employees"
-                  />
+                                      />
                   <p class="text-employees">
-         Mitarbeiter, die mit 12 Jahren Erfahrung in der Motorenreparatur tätig sind
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="item-employees">
-                  <img
-                    src="./images/2048x2048.jpg"
-                    alt="Oleg Vasilenko"
-                    class="img-employees"
-                  />
-                  <p class="text-employees">
-                    Mitarbeiter, die mit 12 Jahren Erfahrung in der Motorenreparatur tätig sind
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="item-employees">
-                  <img
-                    src="./images/2048x2048.jpg"
-                    alt="Oleg Vasilenko"
-                    class="img-employees"
-                  />
-                  <p class="text-employees">
-                  Mitarbeiter, die mit 12 Jahren Erfahrung in der Motorenreparatur tätig sind
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="item-employees">
-                  <img
-                    src="./images/2048x2048.jpg"
-                    alt="Oleg Vasilenko"
-                    class="img-employees"
-                  />
-                  <p class="text-employees">
-                   Mitarbeiter, die mit 12 Jahren Erfahrung in der Motorenreparatur tätig sind
+                    Motorenreparatur mit 12 Erfahrungen
                   </p>
                 </div>
               </div>
@@ -263,21 +265,20 @@
           <button type="button" class="button">Button unsere Mitarbeiter</button>
         </div>
       </section>
-      <!-- ПРО НАС  -->
-      <section class="about-us">
+      <!-- ПРО НАС ÜBER UNS -->
+      <section class="about-us" id="about-us">
         <div class="container">
           <h2 class="title">Über uns</h2>
           <p class="about-description">
-          Deteiling-Zentrum "name" - ein Marktführer im Bereich der Reparatur und Deteiling
+           Deteiling-Zentrum "name" - ein Marktführer im Bereich der Reparatur und Deteiling
 Dienstleistungen für Ihr Auto. Unsere Fachleute bieten detaillierte
 Beratung zur Autopflege und Beseitigung von Ästhetik
 Nachteile. Erfahrene Handwerker helfen, die technische und visuelle Komponente der Autos unserer Kunden in ausgezeichnetem Zustand zu halten, nicht nur
 extern, aber auch intern. Warum sollten wir uns für unser Studio entscheiden? Wir
 wir glauben an Qualitätspflege für Ihr Auto! Leidenschaft für Autos ist für uns nicht nur ein Job, sondern eine echte Leidenschaft, so sind wir perfekt
-Wir wissen, wie man den besten Service bietet. Die Einhaltung von Fristen ist unsere Priorität und dank des Terminsystems erhalten Sie Ihr Auto immer pünktlich. Wir achten auf jedes Detail, geben alles zu 110% und tun alles, damit Ihr Auto perfekt aussieht.
-          </p>
+Wir wissen, wie man den besten Service bietet. Die Einhaltung von Fristen ist unsere Priorität und dank des Terminsystems erhalten Sie Ihr Auto immer pünktlich. Wir achten auf jedes Detail, geben alles zu 110% und tun alles, damit Ihr Auto perfekt aussieht.  </p>
           <p class="text-head">
-            Kontakt des Managers:
+                      Kontakt des Managers:
             <a href="mailto:@serhii_khrystoiev" class="link-head"
               >@serhii_khrystoiev</a
             >
@@ -286,11 +287,11 @@ Wir wissen, wie man den besten Service bietet. Die Einhaltung von Fristen ist un
             src="./images/глайсдорф.png"
             alt="Lage"
             width="450px"
-            height="248"
+            height="248px"
           />
         </div>
       </section>
-      <!-- Formular  -->
+      <!-- ФОРМА  Formular-->
       <section class="connection-form">
         <div class="container">
           <form class="personal-data" autocomplete="on" name="connection_form">
@@ -315,8 +316,8 @@ Wir wissen, wie man den besten Service bietet. Die Einhaltung von Fristen ist un
                 type="tel"
                 name="tel"
                 required
-                placeholder="+49(0__)___-____"
-                pattern="^\+49\(0\d{2}\)\d{3}-\d{4}$"
+                placeholder="+43(___)___-____"
+                pattern="^\+43\(\d{3}\)\d{3}-\d{4}$"
                 class="form-input"
             /></label>
             <button type="submit" class="button button-form">Senden</button>
@@ -328,12 +329,13 @@ Wir wissen, wie man den besten Service bietet. Die Einhaltung von Fristen ist un
       <div class="container">
         <a href="" class="link link-logo logo-footer">Logo</a>
         <p class="copyright">
-          &#169;Alle Rechte vorbehalten.
+        &#169;Alle Rechte vorbehalten.
           <a href="./politic-confidential-german.html" class="index-confidential">Datenschutzerklärung</a>
+        <a href="./Angebotsvereinbarung.html" class="index-confidential">Angebotsvereinbarung</a>
         </p>
       </div>
     </footer>
-    <!-- MOBILE MENÜ  -->
+    <!-- МОБІЛЬНЕ МЕНЮ  MOBILE MENÜ -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="20" height="20">
@@ -359,7 +361,7 @@ Wir wissen, wie man den besten Service bietet. Die Einhaltung von Fristen ist un
         </li>
       </ul>
     </div>
-    <script
+      <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
@@ -367,9 +369,15 @@ Wir wissen, wie man den besten Service bietet. Die Einhaltung von Fristen ist un
     ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/jquery.inputmask.min.js"></script>
+    <script src="./js/jquery.inputmask.min.js"></script> <script>
+      $(document).ready(function () {
+        $('input[name="tel"]').inputmask("+43(999)999-99-99");
+      });
+    </script>
+
         <script src="./js/our-customers.js"></script>
+        <script src="./js/benefits.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
-  </body>
+    </body>
 </html>

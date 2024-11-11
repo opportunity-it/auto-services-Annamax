@@ -586,6 +586,8 @@ header {
 
   display: block;
 
+  text-align: left;
+
   color: #342d2d;
 }
 
@@ -687,5 +689,5 @@ header {
 
 /* СТИЛІ ДЛЯ НІМЕЦЬКОМОВНОЇ СТОРІНКИ  */
 .link-hero.german-hero {
-  width: 280px;
+ padding: 10px 25px;
 }
