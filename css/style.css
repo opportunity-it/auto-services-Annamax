@@ -53,6 +53,16 @@ img {
   color: #600f0f;
 }
 
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 15px 25px;
+
+    min-width: 200px;
+
+    font-size: 23px;
+  }
+}
+
 .title {
   margin-bottom: 20px;
 
@@ -60,6 +70,12 @@ img {
   letter-spacing: 0.9px;
 
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
 }
 
 .container {
@@ -109,16 +125,65 @@ header {
   }
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .nav-list{
+   max-width: 160px;
+
+   flex-wrap: wrap;
+  }
+}
+
+.list-lang{
+  display: flex;
+  gap: 5px;
+}
+
+.link-lang{
+padding: 5px;
+
+color: #ffffff;
+border: 1px solid #ffffff;
+}
+
+.link-lang.disabled{
+background-color: transparent;
+}
+
+.link-lang.enabled{
+background-color: green;
+}
+
+.link-header {
+  color: #ffffff;
+}
+
 .link-logo {
   font-size: 19px;
 
   color: #ffffff;
 }
 
+.list-communication {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
 @media screen and (max-width: 767px) {
   .list-communication {
     display: none;
   }
+}
+
+.list-communication .link-communication {
+  color: #ffffff;
 }
 
 /* СТИЛІЗАЦІЯ HERO  */
@@ -136,6 +201,12 @@ header {
   color: #708383;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 50px;
+  }
+}
+
 .hero-title > .after-title {
   margin-top: 10px;
 
@@ -144,6 +215,12 @@ header {
   display: block;
 
   color: #7c6c6c;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title > .after-title {
+    font-size: 20px;
+  }
 }
 
 .link-hero {
@@ -160,17 +237,51 @@ header {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .link-hero {
+    padding: 20px 45px;
+
+    width: 250px;
+
+    font-size: 21px;
+  }
+}
+
 /* СТИЛІЗАЦІЯ BENEFITS  */
 .benefits {
   padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 62px;
+  }
 }
 
 .list-benefits {
   margin-bottom: 20px;
 
   display: flex;
-  flex-direction: column;
+
   gap: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-benefits {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-benefits {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-benefits {
+    flex-basis: calc((100% - 16px) / 2);
+  }
 }
 
 .img-text {
@@ -214,15 +325,29 @@ header {
   transition: opacity 250ms linear 250ms;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits-text {
+    font-size: 23px;
+  }
+}
+
 .img-text:hover .benefits-text,
 .img-text:focus .benefits-text {
   opacity: 1;
 }
 
-/* СТИЛІЗАЦІЯ OUR CUSTOMERS  */
+/* СТИЛІЗАЦІЯ  CUSTOMERS  */
 .our-customers {
   padding-bottom: 30px;
   padding-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
 .customers-item {
@@ -232,8 +357,16 @@ header {
   border-radius: 30px;
 }
 
-.customers-item:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .customers-item {
+    flex-basis: calc((100% - 15px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customers-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .our.customers {
@@ -259,7 +392,7 @@ header {
   color: #ffffff;
 }
 
-/* СТИЛІЗАЦІЯ OUR-EMPLOYEES */
+/* СТИЛІЗАЦІЯ EMPLOYEES */
 .our-employees {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -426,25 +559,23 @@ header {
   color: currentColor;
 }
 
-
 /* СТИЛІЗАЦІЯ POLITIC CONFILENTIAL  */
-.confidential{
- padding-top: 10px;
- padding-bottom: 10px;  
+.confidential {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.link-back{
-margin-bottom: 10px;
+.link-back {
+  margin-bottom: 10px;
 
-display: block;
+  display: block;
 
-color: #342d2d;
+  color: #342d2d;
 }
 
-.confidential-text{
- color: #342d2d;
+.confidential-text {
+  color: #342d2d;
 }
-
 
 /* МОБІЛЬНЕ МЕНЮ  */
 .menu-container {
@@ -536,3 +667,9 @@ color: #342d2d;
 .mobile-menu-link {
   color: #fff;
 }
+
+/* СТИЛІ ДЛЯ НІМЕЦЬКОМОВНОЇ СТОРІНКИ  */
+.link-hero.german-hero{
+  width: 280px;
+}
+
