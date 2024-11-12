@@ -207,7 +207,7 @@ header {
     url("../images/bg-hero.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: contain;
+  background-size: cover;
 }
 
 .hero-title {
@@ -364,7 +364,7 @@ header {
     ),url("../images/bg-customers.jpg");   
     
 background-position: center;
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
 }
 
