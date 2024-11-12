@@ -357,8 +357,17 @@ header {
 /* СТИЛІЗАЦІЯ  CUSTOMERS  */
 .our-customers {
   padding-bottom: 30px;
-  padding-top: 20px;
+  padding-top: 70px;
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
+    ),url("../images/bg-customers.jpg");   
+    
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
 }
+
 
 @media screen and (min-width: 768px) {
   .customers-list {
@@ -462,6 +471,11 @@ header {
   font-size: 17px;
 
   color: currentColor;
+}
+
+iframe{
+width: 450px;
+height: 450px;
 }
 
 .about-description {
