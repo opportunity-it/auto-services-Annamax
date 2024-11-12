@@ -474,8 +474,14 @@ background-repeat: no-repeat;
 }
 
 iframe{
+margin-bottom: 10px;
+
 width: 450px;
 height: 450px;
+}
+
+.text-map{
+  color:#FFFFFF;
 }
 
 .about-description {
