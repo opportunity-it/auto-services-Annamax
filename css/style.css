@@ -564,6 +564,30 @@ height: 450px;
   font-weight: 500;
 }
 
+.form-checkbox{
+-webkit-appearance: none;
+appearance: none;
+
+
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+ 
+       vertical-align: middle;
+    }
+
+.form-checkbox:checked{
+  background-image: url("../images/full-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+
+  background-color: rgb(82, 77, 77, 0.5);
+ }
+
 .button-form {
   margin-right: auto;
   margin-left: auto;
@@ -592,7 +616,7 @@ height: 450px;
 }
 
 .index-confidential {
-  color: currentColor;
+  color: #ffffff;
 }
 
 /* СТИЛІЗАЦІЯ POLITIC CONFILENTIAL  */
