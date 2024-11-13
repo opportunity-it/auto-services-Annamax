@@ -56,14 +56,21 @@
         <ul class="list list-lang">
           <li><a href="" class="link link-lang disabled">uk</a></li>
           <li>
-            <a href="./index-german.html" class="link link-lang enabled">de</a>
+            <a
+              href="./index-german.html"
+              class="link link-lang enabled"
+              id="language-switch"
+              >de</a
+            >
           </li>
         </ul>
+        <!-- <div id="google_translate_element"></div> -->
+
         <a href="" class="link link-logo">Logo</a>
         <ul class="list list-communication">
           <li>
-            <a href="tel:+1(111)-111-11-11" class="link link-communication"
-              >+1(111)-111-11-11</a
+            <a href="tel:+38(066)-580-92-63" class="link link-communication"
+              >+38(066)-580-92-63</a
             >
           </li>
           <li>
@@ -159,7 +166,7 @@
               <div class="img-text">
                 <img
                   src="./images/частина-двигуна.jpg"
-                  alt="xfcnbyf ldbueyf"
+                  alt="частина-двигуна"
                   width="450"
                   height="450"
                   class="benefits-img"
@@ -215,6 +222,8 @@
                     src="./images/Андрій-Слісаренко.jpg"
                     alt="Андрій Слісаренко"
                     class="img-employees"
+                    width="450"
+                    height="338"
                   />
                   <p class="text-employees">
                     Ремонт ходової частини з 10-м досвідом
@@ -227,6 +236,8 @@
                     src="./images/Богдан-Степаненко.jpg"
                     alt="Богдан Степаненко"
                     class="img-employees"
+                    width="450"
+                    height="338"
                   />
                   <p class="text-employees">Механік з 7-річним досвідом</p>
                 </div>
@@ -237,6 +248,8 @@
                     src="./images/Антуан-Жекович.jpg"
                     alt="Антуан Жекович"
                     class="img-employees"
+                    width="450"
+                    height="338"
                   />
                   <p class="text-employees">
                     Фарбування корпусу авто понад 6 років
@@ -249,6 +262,8 @@
                     src="./images/Павло-Денисюк.jpg"
                     alt="Павло Денисюк"
                     class="img-employees"
+                    width="450"
+                    height="338"
                   />
                   <p class="text-employees">
                     Ремонт двигуна з 8-м досвідом роботи
@@ -261,6 +276,8 @@
                     src="./images//Назар-Коваль.jpg"
                     alt="Назар Коваль"
                     class="img-employees"
+                    width="450"
+                    height="338"
                   />
                   <p class="text-employees">
                     Ремонт авто з 11-м досвідом роботи
@@ -274,6 +291,8 @@
                     src="./images/Ігор-Пономар.jpg"
                     alt="Ігор Пономар"
                     class="img-employees"
+                    width="450"
+                    height="338"
                   />
                   <p class="text-employees">
                     Ремонт двигуна з 12 досвідом роботи
@@ -282,7 +301,6 @@
               </div>
             </div>
           </div>
-          <button type="button" class="button">Кнопка наші працівники</button>
         </div>
       </section>
       <!-- ПРО НАС  -->
@@ -305,9 +323,13 @@
           </p>
           <p class="text-head">
             Контакт керівника:
-            <a href="mailto:@serhii_khrystoiev" class="link-head"
-              >@serhii_khrystoiev</a
+            <a href="mailto:info.autodienst.at@gmail.com" class="link-head"
+              >info.autodienst.at@gmail.com</a
             >
+          </p>
+          <p class="text-head">
+            Номер телефону:
+            <a href="tel:+380665809263" class="link-head">+380665809263</a>
           </p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4319.956089142808!2d34.5343829!3d49.5613437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f10b37cc43b%3A0xd5cb71d39ddc76c2!2z0LLRg9C70LjRhtGPINCa0LDQs9Cw0LzQu9C40LrQsCwgNzYsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDM2MDAw!5e1!3m2!1suk!2snl!4v1731370564006!5m2!1suk!2snl"
@@ -324,6 +346,7 @@
       <!-- ФОРМА  -->
       <section class="connection-form">
         <div class="container">
+          <h2 class="title visually-hidden">Форма зв'язку</h2>
           <form class="personal-data" autocomplete="on" name="connection_form">
             <strong class="title title-form"
               >Виникли питання? Залиште свої дані</strong
@@ -351,7 +374,12 @@
                 class="form-input"
             /></label>
             <label class="form-policy">
-              <input type="checkbox" name="policy" class="form-checkbox" required />
+              <input
+                type="checkbox"
+                name="policy"
+                class="form-checkbox"
+                required
+              />
               <a href="./politic-confidential.html" class="index-confidential"
                 >Політика конфіденційності.</a
               >
@@ -363,9 +391,56 @@
           </form>
         </div>
       </section>
+      <!-- MESSENGERS МЕСЕНДЖЕРИ  -->
+      <section class="messengers">
+        <div class="container">
+          <h2 class="title visually-hidden">МЕСЕНДЖЕРИ</h2>
+          <ul class="list list-messengers">
+            <li class="item-messengers">
+              <a
+                href="https://t.me/serhii_khrystoiev"
+                class="link-messengers"
+                aria-label="Посилання на телеграм"
+                target="_blank"
+                rel="no-referrer noopener nofollow"
+              >
+                <svg class="icon-messengers">
+                  <use href="./images/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-messengers">
+              <a
+                href="viber://add?number=+380665809263"
+                class="link-messengers"
+                aria-label="Посилання на вайбер"
+                target="_blank"
+                rel="no-referrer noopener nofollow"
+              >
+                <svg class="icon-messengers">
+                  <use href="./images/sprite.svg#viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-messengers">
+              <a
+                href="https://wa.me/380665809263"
+                class="link-messengers"
+                aria-label="Посилання на вацап"
+                target="_blank"
+                rel="no-referrer noopener nofollow"
+              >
+                <svg class="icon-messengers">
+                  <use href="./images/sprite.svg#watsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container container-footer">
         <a href="" class="link link-logo logo-footer">Logo</a>
         <p class="copyright">&#169;Всі права захищені.</p>
       </div>
@@ -377,22 +452,38 @@
           <use href="./images/sprite.svg#mobile-close"></use>
         </svg>
       </button>
-
       <ul class="mobile-menu">
         <li class="mobile-menu-item">
-          <a href="" class="link mobile-menu-link">Переваги</a>
+          <a href="#benefits" class="link mobile-menu-link">Переваги</a>
         </li>
         <li class="mobile-menu-item">
-          <a href="" class="link mobile-menu-link">Наші клієнти</a>
+          <a href="#our-customers" class="link mobile-menu-link"
+            >Наші клієнти</a
+          >
         </li>
         <li class="mobile-menu-item">
-          <a href="" class="link mobile-menu-link">Наші працівники</a>
+          <a href="#our-employees" class="link mobile-menu-link"
+            >Наші працівники</a
+          >
         </li>
         <li class="mobile-menu-item">
-          <a href="" class="link mobile-menu-link">Про нас</a>
+          <a href="#about-us" class="link mobile-menu-link">Про нас</a>
         </li>
-        <li class="mobile-menu-item">
-          <a href="" class="link mobile-menu-link">Контакти</a>
+      </ul>
+
+      <ul class="list list-mob-communication">
+        <li>
+          <a href="tel:+38(066)-580-92-63" class="link link-mob-communication"
+            >+38(066)-580-92-63</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:info.autodienst.at@gmail.com"
+            class="link link-mob-communication"
+          >
+            info.autodienst.at@gmail.com
+          </a>
         </li>
       </ul>
     </div>
@@ -412,7 +503,31 @@
     </script>
     <script src="./js/our-customers.js"></script>
     <script src="./js/benefits.js"></script>
+    <script src="./js/switch-language.js"></script>
+    <!-- <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'uk'}, 'google_translate_element');
+    }
+</script> -->
+    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script>
+      // Збереження позиції прокрутки перед зміною мови
+      document
+        .getElementById("language-switch")
+        .addEventListener("click", function () {
+          localStorage.setItem("scrollPosition", window.scrollY);
+          window.location.reload();
+        });
+
+      window.addEventListener("load", function () {
+        const savedPosition = localStorage.getItem("scrollPosition");
+        if (savedPosition !== null) {
+          window.scrollTo(0, parseInt(savedPosition));
+          localStorage.removeItem("scrollPosition");
+        }
+      });
+    </script>
   </body>
 </html>
