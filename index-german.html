@@ -59,14 +59,16 @@
               href="./index.html"
               class="link link-lang enabled ukrainian"
               id="language-switch"
-              >Ukrainian</a
+              >Ukrainisch</a
             >
           </li>
           <li>
-            <a href="" class="link link-lang disabled german">German</a>
+            <a href="" class="link link-lang disabled german">Deutsch</a>
           </li>
         </ul>
-        <a href="" class="link link-logo">Logo</a>
+        <a href="" class="link link-logo">
+          <img src="./images/logo-img.png" alt="логотип" width="40" height="40"
+        /></a>
         <ul class="list list-communication">
           <li>
             <a href="tel:+1(111)-111-11-11" class="link link-communication"
@@ -330,10 +332,8 @@
             <a href="tel:+436602430111" class="link-head">+43 660 2430111</a>
           </p>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9069.92965709535!2d15.636396056784774!3d47.084679699316936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e4de1c5801353%3A0x8f5b923241e76921!2zODIwMCBMYcOfbml0enRoYWwsINCQ0LLRgdGC0YDRltGP!5e1!3m2!1suk!2snl!4v1731371089304!5m2!1suk!2snl"
-            width="600"
-            height="450"
-            style="border: 0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9069.92965709535!2d15.636396056784774!3d47.084679699316936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e4de1c5801353%3A0x8f5b923241e76921!2zODIwMCBMYcOfbml0enRoYWwsINCQ0LLRgdGC0YDRltGP!5e1!3m2!1suk!2snl!4v1731371089304!5m2!1suk!2snl"       
+                              style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -441,7 +441,9 @@
     </main>
     <footer class="footer">
       <div class="container container-footer">
-        <a href="" class="link link-logo logo-footer">Logo</a>
+        <a href="" class="link link-logo logo-footer">
+          <img src="./images/logo-img.png" alt="логотип" width="40" height="40"
+        /></a>
         <p class="copyright">&#169;Alle Rechte vorbehalten.</p>
       </div>
     </footer>
@@ -470,21 +472,21 @@
           <a href="#about-us" class="link mobile-menu-link">Über uns</a>
         </li>
       </ul>
-        <ul class="list list-mob-communication">
-          <li>
-            <a href="tel:+1(111)-111-11-11" class="link link-mob-communication"
-              >+43 660 2430111</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:info.autodienst.at@gmail.com"
-              class="link link-mob-communication"
-            >
-              info.autodienst.at@gmail.com
-            </a>
-          </li>
-        </ul>
+      <ul class="list list-mob-communication">
+        <li>
+          <a href="tel:+1(111)-111-11-11" class="link link-mob-communication"
+            >+43 660 2430111</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:info.autodienst.at@gmail.com"
+            class="link link-mob-communication"
+          >
+            info.autodienst.at@gmail.com
+          </a>
+        </li>
+      </ul>
     </div>
     <script
       defer
@@ -505,8 +507,9 @@
     <script src="./js/switch-language.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <!-- СКРИПТ ЗБЕРЕЖЕННЯ ПОЗИЦІЇ НА СТОРІНКИ ПІСЛЯ ПЕРЕЗАВАНТАЖЕННЯ -->
     <script>
-            document
+      document
         .getElementById("language-switch")
         .addEventListener("click", function () {
           localStorage.setItem("scrollPosition", window.scrollY);

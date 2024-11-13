@@ -54,19 +54,28 @@
         </nav>
 
         <ul class="list list-lang">
-          <li><a href="" class="link link-lang disabled ukrainian">Ukrainian</a></li>
+          <li>
+            <a href="" class="link link-lang disabled ukrainian">Українська</a>
+          </li>
           <li>
             <a
               href="./index-german.html"
               class="link link-lang enabled german"
               id="language-switch"
-              >German</a
+              >Німецька</a
             >
           </li>
         </ul>
         <!-- <div id="google_translate_element"></div> -->
 
-        <a href="" class="link link-logo">Logo</a>
+        <a href="" class="link link-logo">
+          <img
+            src="./images/logo-img.png"
+            alt="логотип"
+            width="40"
+            height="40"
+          />
+        </a>
         <ul class="list list-communication">
           <li>
             <a href="tel:+38(066)-580-92-63" class="link link-communication"
@@ -301,6 +310,7 @@
               </div>
             </div>
           </div>
+          <button type="button" class="button">Наші кращі працівники</button>
         </div>
       </section>
       <!-- ПРО НАС  -->
@@ -333,7 +343,7 @@
           </p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4319.956089142808!2d34.5343829!3d49.5613437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f10b37cc43b%3A0xd5cb71d39ddc76c2!2z0LLRg9C70LjRhtGPINCa0LDQs9Cw0LzQu9C40LrQsCwgNzYsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDM2MDAw!5e1!3m2!1suk!2snl!4v1731370564006!5m2!1suk!2snl"
-                               style="border: 0"
+            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -439,7 +449,9 @@
     </main>
     <footer class="footer">
       <div class="container container-footer">
-        <a href="" class="link link-logo logo-footer">Logo</a>
+        <a href="" class="link link-logo logo-footer">
+          <img src="./images/logo-img.png" alt="логотип" width="40" height="40"
+        /></a>
         <p class="copyright">&#169;Всі права захищені.</p>
       </div>
     </footer>
@@ -510,8 +522,8 @@
     <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <!-- СКРИПТ ЗБЕРЕЖЕННЯ ПОЗИЦІЇ НА СТОРІНКИ ПІСЛЯ ПЕРЕЗАВАНТАЖЕННЯ -->
     <script>
-      // Збереження позиції прокрутки перед зміною мови
       document
         .getElementById("language-switch")
         .addEventListener("click", function () {
