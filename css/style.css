@@ -147,14 +147,13 @@ header {
 }
 
 .link-lang {
+padding: 5px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 25px;
-  height: 25px;
-
-  color: #ffffff;
+ color: #ffffff;
   border: 1px solid #ffffff;
 }
 
@@ -163,8 +162,12 @@ header {
   cursor: not-allowed;
 }
 
-.link-lang.enabled {
-  background-color: green;
+.ukrainian{
+  background-image: linear-gradient(to bottom, rgb(0, 0, 255) 50%, rgb(255, 255, 0) 50%);
+}
+
+.german {
+  background-image: linear-gradient(to bottom, black 33.33%, red 33.33%, red 66.66%, yellow 66.66%);
 }
 
 .link-header {
@@ -473,7 +476,7 @@ header {
 }
 
 iframe {
-  width: 450px;
+  max-width: 450px;
   height: 450px;
 }
 
