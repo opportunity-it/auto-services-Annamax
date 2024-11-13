@@ -163,11 +163,13 @@ padding: 5px;
 }
 
 .ukrainian{
+      color: rgb(153 137 137);
   background-image: linear-gradient(to bottom, rgb(0, 0, 255) 50%, rgb(255, 255, 0) 50%);
 }
 
 .german {
-  background-image: linear-gradient(to bottom, black 33.33%, red 33.33%, red 66.66%, yellow 66.66%);
+   color: rgb(31 29 29);
+  background-image: linear-gradient(to bottom, red 33.33%, white 33.33%, white 66.66%, red 66.66%);
 }
 
 .link-header {
